@@ -7,3 +7,5 @@ tmp
 build/
 *.prefs
 Resources/
+
+/build
