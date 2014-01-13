@@ -1,0 +1,7 @@
+<Alloy>
+	<View class="container">
+		<View id="img" left="0" backgroundColor="gray" width="50" height="50" onClick="selectImage"/>
+		<TextField id="nameField" hintText="Input Name" onBlur="doneEditing"/>
+		<Button id="deleteBtn" title="x" right="20" onClick="deleteRow"/>
+	</View>
+</Alloy>

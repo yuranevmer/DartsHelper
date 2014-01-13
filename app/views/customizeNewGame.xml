@@ -1,0 +1,14 @@
+<Alloy>
+	<Window class="container">
+		<RightNavButton>
+			<Button id="doneBtn" title="Start" bottom="50" onClick="startGame"/>
+		</RightNavButton>
+		<Label text="Players" color="black" left="20" top="50"/>
+		<TableView id="table" top="70" bottom="70" borderWidth="1" allowsSelection="false">
+			<TableViewRow>
+				<Button id="add" title="+" right="20" top="20" onClick="addPlayer"/>
+			</TableViewRow>
+		</TableView>
+		<!--Button id="doneBtn" title="Start" bottom="50" onClick="startGame"/-->
+	</Window>
+</Alloy>

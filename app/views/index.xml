@@ -1,0 +1,7 @@
+<Alloy>
+	<NavigationWindow id="nav" class="container">
+		<Window id="win">
+			<Button id="newGameBtn" title="newGame" onClick="startNewGame"/>
+		</Window>
+	</NavigationWindow>
+</Alloy>

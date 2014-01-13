@@ -1,0 +1,7 @@
+
+"#newGameBtn": {
+	width: "40%"
+}
+"#nav":{
+	navBarHidden: true
+}
