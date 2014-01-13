@@ -6,6 +6,5 @@ tmp
 .map
 build/
 *.prefs
-Resources/
 
 /build
