@@ -3,10 +3,13 @@
 		<RightNavButton>
 			<Button id="doneBtn" title="Start" bottom="50" onClick="startGame"/>
 		</RightNavButton>
-		<Label text="Players" color="black" left="20" top="50"/>
-		<TableView id="table" top="70" bottom="70" borderWidth="1" allowsSelection="false">
+		<Label text="Players" color="black" left="20" top="0"/>
+		<TableView id="table" top="20" bottom="200" borderWidth="1" allowsSelection="false">
 			<TableViewRow>
-				<Button id="add" title="+" right="20" top="20" onClick="addPlayer"/>
+				<View height="50" onSingletap="addPlayer"> 
+					<Label text="Add Player" right="60"/>
+					<Button id="add" title="+" right="20"/>
+				</View>
 			</TableViewRow>
 		</TableView>
 		<!--Button id="doneBtn" title="Start" bottom="50" onClick="startGame"/-->

@@ -1,0 +1,6 @@
+<Alloy>
+	<View class="container" width=Ti.UI.SIZE height="50">
+		<Label id="name" left="20"/>
+		<View id="hitsHolder" left="50" layout="horizontal" horizontalWrap="false" width=Ti.UI.SIZE height=Ti.UI.SIZE/>
+	</View>
+</Alloy>

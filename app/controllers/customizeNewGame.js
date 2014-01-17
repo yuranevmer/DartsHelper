@@ -3,6 +3,7 @@ $.numberOfPlayers = 0;
 $.players = [];
 
 function startGame(e){
+	$.players = [];
 	var rows = $.table.sections[0].rows;
 	_.each(rows, function(row){
 		if (row.type == "player") {
@@ -10,6 +11,8 @@ function startGame(e){
 		}
 	});
 	Ti.API.info($.players);
+	var game = Alloy.createController("theGame", {playersData: $.players});
+	Alloy.Globals.nav.openWindow(game.getView());
 }
 function addPlayer(){
 	var row = Ti.UI.createTableViewRow({
@@ -26,6 +29,11 @@ function addPlayer(){
 	row.add(rc.getView());
 	
 	$.table.insertRowBefore($.numberOfPlayers, row);
+	/*
+	$.table.setContentInsets({
+		top: -1000 
+	}, {animated: true});
+	*/
 	$.numberOfPlayers++;
 	rc.focus();
 }
@@ -36,14 +44,3 @@ function deleteRow(rowController){
 	$.table.deleteRow(row);
 	rowController = null;
 }
-function asdf(){
-	123123+222;
-}
-/*
- * 
- * 
- * asdfasdf
- * 
- * 
- */
-
