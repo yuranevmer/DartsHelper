@@ -17,12 +17,15 @@ _.each(playersData, function(data){
 var data = [];
 _.each($.players, function(player){
 	var row = Ti.UI.createTableViewRow({
-		width:Ti.UI.SIZE
+		//width:200,
+		height: Ti.UI.SIZE
 	});
 	row.add(player.row.getView());
-	data.push(row);
+	//data.push(row);
+    $.table.appendRow(row);
 });
-$.table.data = data;
+//$.table.data = data;
+
 
 _.times(25, function(){
 	$.players[0].row.addHit({

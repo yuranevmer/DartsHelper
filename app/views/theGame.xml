@@ -1,9 +1,15 @@
 <Alloy>
 	<Window class="container">
-		<ScrollView left="0" top="0" bottom="100" contentHeight=Ti.UI.SIZE contentWidth=Ti.UI.SIZE>
-			<TableView id="table">
-							
+		<ScrollView left="0" top="0" bottom="100" backgroundColor="yellow" contentHeight=Ti.UI.SIZE contentWidth=Ti.UI.SIZE>
+			<TableView id="table" width="400" backgroundColor="blue">
 				
+				<TableViewSection id="hitsTableSection">
+					<HeaderView>
+						<View height="50" backgroundColor="yellow">
+							<Label text="header22"></Label>
+						</View>
+					</HeaderView>
+				</TableViewSection>
 			</TableView>
 		</ScrollView>
 	</Window>
